@@ -1,6 +1,6 @@
 {
   "name": "install-tauque",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Install Tauque with readme and default config",
   "bin": "bin/install.js",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "author": "CTNicholas",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "tauque": "*"
   }
 }
