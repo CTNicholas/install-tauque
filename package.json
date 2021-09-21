@@ -1,6 +1,6 @@
 {
   "name": "install-tauque",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Install Tauque with readme and default config",
   "bin": "bin/install.js",
   "type": "module",
@@ -11,6 +11,7 @@
   "author": "CTNicholas",
   "license": "MIT",
   "dependencies": {
+    "ansi-colors": "^4.1.1",
     "cross-spawn": "^7.0.3"
   }
 }
