@@ -1,6 +1,6 @@
 {
   "name": "install-tauque",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Install Tauque with readme and default config",
   "bin": "bin/install.js",
   "scripts": {
