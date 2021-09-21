@@ -1,7 +1,7 @@
-import fs from 'fs'
-import path from 'path'
-import commonEntryPoints from './commonEntryPoints.js'
-import getPath from './getPath.js'
+const fs = require('fs')
+const path = require('path')
+const commonEntryPoints = require('./commonEntryPoints.js')
+const getPath = require('./getPath.js')
 
 /**
  * Looks for common entry points, and returns if one exists
@@ -9,7 +9,7 @@ import getPath from './getPath.js'
  * @param packageJson
  * @returns {string|*}
  */
-export default function getConfigSource (packageJson) {
+module.exports = function getConfigSource (packageJson) {
   if (packageJson.main) {
     return packageJson.main
   }

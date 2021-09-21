@@ -1,12 +1,12 @@
-import path from 'path'
-import getConfigSource from './createConfigSource.js'
+const path = require('path')
+const getConfigSource = require('./createConfigSource.js')
 
 /**
  * Creates default tauque.json config object
  * @param packageJson
  * @returns {{}[]}
  */
-export default function createConfig (packageJson) {
+module.exports = function createConfig (packageJson) {
   const config = {}
   config.name = packageJson.name || 'package'
   config.source = getConfigSource(packageJson)

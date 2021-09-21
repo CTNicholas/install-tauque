@@ -1,6 +1,6 @@
-import path from 'path'
+const path = require('path')
 
-export default function commonEntryPoints (name = '') {
+module.exports = function commonEntryPoints (name = '') {
   const dirs = ['src', 'lib', '']
   const files = ['index', 'entry', 'main', name]
   const exts = ['.js', '.ts', '.tsx', '.jsx', '.mjs', '.esm.js', '.cjs']

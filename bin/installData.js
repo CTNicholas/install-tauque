@@ -1,9 +1,9 @@
-export const tauqueScripts = {
+const tauqueScripts = {
   build: 'tauque',
   dev: 'tauque --dev'
 }
 
-export const tauqueDefaultPackage = {
+const tauqueDefaultPackage = {
   name: 'tauque-package',
   author: '',
   description: '',
@@ -12,7 +12,7 @@ export const tauqueDefaultPackage = {
   scripts: tauqueScripts
 }
 
-export const tauqueReadme = `
+const tauqueReadme = `
  \`\`\`
  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄                                                                
  ███████████████  ▄██████▄   ████    ████   ▄████▄ ████ ████    ████   ▄███████▄ 
@@ -182,3 +182,9 @@ export const tauqueReadme = `
  esbuild: https://esbuild.github.io/api
    
 `
+
+module.exports = {
+  tauqueDefaultPackage,
+  tauqueScripts,
+  tauqueReadme
+}

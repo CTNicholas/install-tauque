@@ -1,11 +1,12 @@
-import fs from 'fs'
-import { tauqueScripts } from './installData.js'
+const fs = require('fs')
+const installData = require('./installData.js')
+const { tauqueScripts } = installData
 
 /**
  * Merges scripts with current package.json content and returns as object
  * @returns {{}} - package.json content
  */
-export default function editPackage (packagePath) {
+module.exports = function editPackage (packagePath) {
   let loadedJson = {}
   try {
     loadedJson = JSON.parse(fs.readFileSync(packagePath))
