@@ -5,7 +5,7 @@
   "bin": "bin/install.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node ./bin/install.js"
+    "start": "node ./bin/install.js"
   },
   "author": "CTNicholas",
   "license": "MIT",
