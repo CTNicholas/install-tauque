@@ -1,1 +1,0 @@
-console.log('Edit tauque.json to change index file')

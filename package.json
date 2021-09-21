@@ -1,6 +1,6 @@
 {
   "name": "install-tauque",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install Tauque with readme and default config",
   "bin": "bin/install.js",
   "type": "module",
@@ -9,6 +9,11 @@
     "start": "node ./bin/install.js"
   },
   "author": "CTNicholas",
+  "homepage": "https://github.com/CTNicholas/tauque#readme",
+  "repository": "github:CTNicholas/install-tauque",
+  "bugs": {
+    "url": "https://github.com/CTNicholas/install-tauque/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "ansi-colors": "^4.1.1",
