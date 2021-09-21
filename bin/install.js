@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-const fs = require('fs')
-const c = require('ansi-colors')
-const installData = require('./installData.js')
-const createConfig = require('./createConfig.js')
-const getPath = require('./getPath.js')
-const createPackage = require('./createPackage.js')
-const editPackage = require('./editPackage.js')
-const { tauqueReadme } = installData
+import fs from 'fs'
+import c from 'ansi-colors'
+import { tauqueReadme } from './installData.js'
+import createConfig from './createConfig.js'
+import getPath from './getPath.js'
+import createPackage from './createPackage.js'
+import editPackage from './editPackage.js'
 
 runInstall()
 

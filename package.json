@@ -1,8 +1,9 @@
 {
   "name": "install-tauque",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Install Tauque with readme and default config",
   "bin": "bin/install.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/install.js"
