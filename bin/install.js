@@ -6,6 +6,8 @@ import createConfig from './createConfig.js'
 import getPath from './getPath.js'
 import createPackage from './createPackage.js'
 import editPackage from './editPackage.js'
+import getPackageManager from './getPackageManager.js'
+import installTauque from './installTauque.js'
 
 runInstall()
 
@@ -13,11 +15,15 @@ runInstall()
  * Install Tauque, create config (if needed), create readme, output info
  * @returns {null}
  */
-function runInstall () {
+async function runInstall () {
+  const manager = getPackageManager()
+
   console.log(c.gray('__________________________________________'))
   console.log()
   console.log('Installing Tauque bundler...')
   console.log()
+
+  await installTauque()
 
   // Skip config install if tauque.json found
   const tauquePath = getPath('tauque.json')
@@ -59,8 +65,8 @@ function runInstall () {
 
   // Final message, after a 1 second delay
   setTimeout(() => {
-    let buildCmd = packageJson.scripts.tauque ? 'npm run tauque' : 'npm run build'
-    let devCmd = packageJson.scripts.tauque ? 'npm run tauquedev' : 'npm run dev'
+    let buildCmd = packageJson.scripts.tauque ? `${manager} ${manager === 'npm' ? 'run ' : ''}tauque` : `${manager} ${manager === 'npm' ? 'run ' : ''}build`
+    let devCmd = packageJson.scripts.tauque ? `${manager} ${manager === 'npm' ? 'run ' : ''}tauquedev` : `${manager} ${manager === 'npm' ? 'run ' : ''}dev`
     console.log(c.gray('__________________________________________'))
     console.log()
     console.log(' ' + c.bold.bgBlueBright(' ' + 'τauque bundler installed' + ' '))

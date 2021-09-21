@@ -10,7 +10,7 @@
   },
   "author": "CTNicholas",
   "license": "MIT",
-  "peerDependencies": {
-    "tauque": "*"
+  "dependencies": {
+    "cross-spawn": "^7.0.3"
   }
 }
