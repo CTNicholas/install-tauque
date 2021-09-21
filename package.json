@@ -1,0 +1,15 @@
+{
+  "name": "install-tauque",
+  "version": "0.0.1",
+  "description": "Install Tauque with readme and default config",
+  "bin": "bin/install.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node ./bin/install.js"
+  },
+  "author": "CTNicholas",
+  "license": "MIT",
+  "dependencies": {
+    "tauque": "*"
+  }
+}
